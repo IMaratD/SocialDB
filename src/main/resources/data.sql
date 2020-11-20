@@ -1,16 +1,16 @@
-INSERT INTO users VALUES
+INSERT INTO users (id, name) VALUES
 (1, 'Vasya'),
 (2, 'Petya'),
 (3, 'Sasha'),
 (4, 'Masha'),
 (5, 'Katya');
 
-INSERT INTO relation VALUES
+INSERT INTO relation (id, user_id, friend_id) VALUES
 (1, 1, 4),
 (2, 2, 3),
 (3, 4, 5);
 
-INSERT INTO messages VALUES
+INSERT INTO messages (id, sender_id, recipient_id, content) VALUES
 (1, 1, 2,'first'),
 (2, 2, 1,'second'),
 (3, 4, 5,'third'),
@@ -21,5 +21,3 @@ INSERT INTO messages VALUES
 (8, 3, 5,'hi'),
 (9, 5, 3,'dfgh'),
 (10, 5, 4,'last');
-
-SELECT
